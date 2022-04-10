@@ -19,6 +19,6 @@ body {
 }
 
 .wrapper {
-  width: 22%;;
+  max-width: 400px;
   margin: 0 auto;
 }
