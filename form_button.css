@@ -1,0 +1,80 @@
+.form {
+  text-align: center;
+}
+
+.form__fieldset {
+  border: none;
+  border-radius: 15px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.form__legend {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.form__amount {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.form__exchange {
+  height: 30px;
+  padding-left: 8px;
+  padding-top: 5px;
+  border: none;
+  background-color: #ffffff73;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.form__result {
+  margin-top: 30px;
+}
+
+.form__resultNumber {
+  font-size: 24px;
+}
+
+.form__submitBtn {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 5px 5px 5px rgba(94, 104, 121, 0.288);
+}
+
+.form__resetBtn {
+  box-shadow: -3px -3px 7px #ffffff73, 5px 5px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 10px;
+  padding-top: 5px;
+  border: none;
+}
+
+.form__submitBtn:hover {
+  cursor: pointer;
+}
+
+.form__resetBtn:hover {
+  cursor: pointer;
+}
+
+.form__submitBtn:active {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 5px 5px 5px rgba(94, 104, 121, 0.288);
+}
+
+.form__resetBtn:active {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 5px 5px 5px rgba(94, 104, 121, 0.288);
+}
