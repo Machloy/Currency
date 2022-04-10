@@ -10,4 +10,4 @@ This is a simple site that was "homework" in a course in which I am a participan
 The website is written in simple HTML, CSS also JS. It's supposed to work, not look (at least for now).
 
 ## Screenshot on my website
-[Currency converter](https://i.ibb.co/MsMB2PC/calculator1.png)
+![Currency converter](https://i.ibb.co/MsMB2PC/calculator1.png)
