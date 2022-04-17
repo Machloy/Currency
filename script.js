@@ -1,12 +1,24 @@
-let amount = document.querySelector(".js-amount");
-let result = document.querySelector(".js-result");
-let exchange = document.querySelector(".js-exchange");
-let form = document.querySelector(".js-form");
+{
+  const form = document.querySelector(".js-form");
+  const result = document.querySelector(".js-result");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let amountValue = amount.value;
-  let exchangeValue = exchange.value;
-  let convert = amountValue / exchangeValue;
-  result.innerText = convert.toFixed(2);
-});
+  const changeResult = () => {
+    result.innerText = "0.00";
+  };
+
+  form.addEventListener("click", () => {
+    result.innerText = "0.00";
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const exchange = document.querySelector(".js-exchange");
+    const amount = document.querySelector(".js-amount");
+    const amountValue = amount.value;
+    const exchangeValue = exchange.value;
+    const convert = amountValue / exchangeValue;
+    result.innerText = convert.toFixed(2);
+  });
+
+  form.addEventListener("click", changeResult);
+}
