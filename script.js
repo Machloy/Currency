@@ -6,7 +6,7 @@
   const result = document.querySelector(".js-result");
 
   const changeResult = () => {
-    result.innerText = "0.00";Zmieniony cały kod na funkcje strzałkowej
+    result.innerText = "0.00";
   };
 
   const calculateResult = () => {
