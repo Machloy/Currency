@@ -1,26 +1,37 @@
 {
-  const form = document.querySelector(".js-form");
+  const updateResult = (convert) => {
+    result.innerText = convert.toFixed(2);
+  };
+
   const result = document.querySelector(".js-result");
 
   const changeResult = () => {
     result.innerText = "0.00";
   };
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  const calculateResult = () => {
     const exchange = document.querySelector(".js-exchange");
     const amount = document.querySelector(".js-amount");
 
     const amountValue = amount.value;
     const exchangeValue = exchange.value;
 
-    const convert = amountValue / exchangeValue;
-    result.innerText = convert.toFixed(2);
-  });
+    return amountValue / exchangeValue;
+  };
+
+  const submitForm = (event) => {
+    event.preventDefault();
+
+    const convert = calculateResult();
+    updateResult(convert);
+  };
 
   const init = () => {
     const reset = document.querySelector(".js-resetBtn");
+    const form = document.querySelector(".js-form");
+
     reset.addEventListener("click", changeResult);
+    form.addEventListener("submit", submitForm);
   };
 
   init();
